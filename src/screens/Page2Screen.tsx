@@ -32,7 +32,9 @@ const Page2Screen = () => {
         onPress={() => navigation.navigate('Page3Screen')}
       />
 
-      <Text>Navegar con argumentos</Text>
+      <Text style={{marginVertical: 20, fontSize: 20}}>
+        Navegar con argumentos
+      </Text>
 
       <View style={{flexDirection: 'row'}}>
         <TouchableOpacity
