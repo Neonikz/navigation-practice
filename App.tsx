@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 // import {StackNavigator} from './src/navigator/StackNavigator';
 // import {BasicSideMenu} from './src/navigator/BasicSideMenu';
 import {SideMenu} from './src/navigator/SideMenu';
+// import {Tabs} from './src/navigator/Tabs';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       {/* <StackNavigator /> */}
       {/* <BasicSideMenu /> */}
       <SideMenu />
+      {/* <Tabs /> */}
     </NavigationContainer>
   );
 };

@@ -1,8 +1,9 @@
-import React, {useEffect} from 'react';
-import {useNavigation} from '@react-navigation/core';
-import {Text, View, Button} from 'react-native';
-import {styles} from '../themes/appTheme';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import React, { useEffect } from 'react';
+import { useNavigation } from '@react-navigation/core';
+import { Text, View, Button } from 'react-native';
+import { styles } from '../themes/appTheme';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Ionicons';
 // import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const Page2Screen = () => {
@@ -32,11 +33,11 @@ const Page2Screen = () => {
         onPress={() => navigation.navigate('Page3Screen')}
       />
 
-      <Text style={{marginVertical: 20, fontSize: 20}}>
+      <Text style={{ marginVertical: 20, fontSize: 20 }}>
         Navegar con argumentos
       </Text>
 
-      <View style={{flexDirection: 'row'}}>
+      <View style={{ flexDirection: 'row' }}>
         <TouchableOpacity
           style={{
             ...styles.largeButton,
@@ -48,6 +49,7 @@ const Page2Screen = () => {
               name: 'Pedro',
             })
           }>
+          <Icon name="man-outline" size={35} color="#fff" />
           <Text style={styles.largeButtonText}>Pedro</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -61,6 +63,7 @@ const Page2Screen = () => {
               name: 'Maria',
             })
           }>
+          <Icon name="woman-outline" size={35} color="#fff" />
           <Text style={styles.largeButtonText}>Maria</Text>
         </TouchableOpacity>
       </View>
