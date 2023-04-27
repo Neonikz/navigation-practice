@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { colors, styles } from '../themes/appTheme';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { styles } from '../themes/appTheme';
+import TouchableIcon from '../components/TouchableIcon';
 
 
 const Tab1Screen = () => {
@@ -9,13 +9,13 @@ const Tab1Screen = () => {
     <View style={styles.globalMargin}>
       <Text style={styles.title}>Iconos</Text>
       <Text>
-        <Icon name="airplane-outline" size={80} color={colors.primary} />
-        <Icon name="desktop-outline" size={80} color={colors.primary} />
-        <Icon name="cut-outline" size={80} color={colors.primary} />
-        <Icon name="game-controller-outline" size={80} color={colors.primary} />
-        <Icon name="heart-half-outline" size={80} color={colors.primary} />
-        <Icon name="leaf-outline" size={80} color={colors.primary} />
-        <Icon name="musical-notes-outline" size={80} color={colors.primary} />
+        <TouchableIcon iconName="airplane-outline" />
+        <TouchableIcon iconName="desktop-outline" />
+        <TouchableIcon iconName="cut-outline" />
+        <TouchableIcon iconName="game-controller-outline" />
+        <TouchableIcon iconName="heart-half-outline" />
+        <TouchableIcon iconName="leaf-outline" />
+        <TouchableIcon iconName="musical-notes-outline" />
       </Text>
     </View>
   );
